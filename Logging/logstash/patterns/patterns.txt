@@ -1,0 +1,8 @@
+IMAGING_TIMESTAMP %{YEAR}-%{MONTHNUM}-%{MONTHDAY}[T ]%{HOUR}:?%{MINUTE}(?::?%{SECOND})?(\s?%{ISO8601_TIMEZONE})?
+IMAGING_LOGLEVEL (Verbose|Debug|Information|Warning|Error|Fatal)
+IMAGING_SERVICE (webapi|worker|rabbitmq|redis)
+
+REDISTIMESTAMP %{MONTHDAY} %{MONTH} %{TIME}
+REDISLOG \[%{POSINT:pid}\] %{REDISTIMESTAMP:timestamp} \*
+
+RABBIT_TIME %{MONTHDAY}-%{MONTH}-%{YEAR}::%{HOUR}:%{MINUTE}:%{SECOND}

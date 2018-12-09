@@ -1,0 +1,23 @@
+version: '2'
+services:
+    redis:
+        image: redis
+        container_name: osdr-imaging-redis
+        command: redis-server --appendonly yes
+        logging:
+            driver: "gelf"
+            options:
+                gelf-address: "udp://localhost:12201"
+        ports:
+        - "6379:6379"
+    rabbitmq:
+        image: rabbitmq:3-management
+        container_name: osdr-imaging-rabbit
+        logging:
+            driver: "gelf"
+            options:
+                gelf-address: "udp://localhost:12202"
+        ports:
+        - "8080:15672"
+        - "5671:5671"
+        - "5672:5672"

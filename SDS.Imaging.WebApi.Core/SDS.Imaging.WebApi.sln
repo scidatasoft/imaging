@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3A78A93C-83D3-4023-BFF8-F6D99C6B1D39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FDDC303F-0488-49F7-93D7-36697B6B265D}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		..\readme.md = ..\readme.md
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SDS.Imaging.WebApi", "src\SDS.Imaging.WebApi\SDS.Imaging.WebApi.xproj", "{0D854484-FA5E-4BB2-B0C7-65D2BBA9FF7B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SDS.Imaging.Storage", "src\SDS.Imaging.Storage\SDS.Imaging.Storage.xproj", "{F4AB50B6-A4B3-4156-82DA-39A99F1A9084}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D854484-FA5E-4BB2-B0C7-65D2BBA9FF7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D854484-FA5E-4BB2-B0C7-65D2BBA9FF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D854484-FA5E-4BB2-B0C7-65D2BBA9FF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D854484-FA5E-4BB2-B0C7-65D2BBA9FF7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4AB50B6-A4B3-4156-82DA-39A99F1A9084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4AB50B6-A4B3-4156-82DA-39A99F1A9084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4AB50B6-A4B3-4156-82DA-39A99F1A9084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4AB50B6-A4B3-4156-82DA-39A99F1A9084}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D854484-FA5E-4BB2-B0C7-65D2BBA9FF7B} = {3A78A93C-83D3-4023-BFF8-F6D99C6B1D39}
+		{F4AB50B6-A4B3-4156-82DA-39A99F1A9084} = {3A78A93C-83D3-4023-BFF8-F6D99C6B1D39}
+	EndGlobalSection
+EndGlobal
